@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div id="page" class="box">
+        <div>
+            <header>
+                <img src="./assets/logo.svg" alt="">
+            </header>
+
+            <main>
+                <div class="headline">
+                    <h1>Acesse a plataforma</h1>
+                    <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+                </div>
+
+                <form>
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" autocomplete="username"
+                            placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="label-wrapper box">
+                            <label for="password">Senha</label>
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                        <input id="password" type="password" autocomplete="current-password" name="password"
+                            placeholder="Digite sua senha" required />
+
+                        <img class="eye" onclick="togglePassword()" src="./assets/eye-off.svg" alt="">
+                        <img class="eye hide" onclick="togglePassword()" src="./assets/eye.svg" alt="">
+                    </div>
+
+                    <button type="submit">Entrar</button>
+
+                    <div class="create-account">
+                        Ainda não tem conta?
+                        <a href="#">Inscreva-se</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <div class="box-right">
+            <h2>Mais de 5000 desenvolvedores a espera do seu contato.</h2>
+            <img src="./assets/jobs.svg" alt="">
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
